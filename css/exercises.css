@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+html {
+	overflow-y: scroll;
+	/*画面に収まりきれなかったときにスクロールして表示することを許可するか否か*/
+}
+
+/* リセットおまじない--------------------------------- */
+
+body,h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: #fff;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.4;
+	min-width: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	outline: none;
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	border: 0px;
+	vertical-align: bottom;
+}
+
+/* --------------------------------------------------- */
+
+body {
+	font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", 游ゴシック, YuGothic, メイリオ, Meiryo, HGPｺﾞｼｯｸM, Osaka, "ＭＳ Ｐゴシック", sans-serif, "Century Gothic", Arial;
+}
+
+header {
+	height: 60px;
+	width: 100%;
+	background-color: #eeeaec;
+	text-align: center;
+	position: fixed;
+}
+
+header ul {
+	width: 800px;
+	margin: 0 auto;
+	display: flex;
+}
+
+header ul li {
+	color: #acacac;
+	width: 25%;
+	line-height: 60px;
+	transition/*-duration*/: 0.2s;
+}
+
+header ul li:hover {
+	color: #111111;
+}
+
+section {
+	text-align: center;
+	padding: 100px 0;
+}
+
+section h1 {
+	font-size: 40px;
+	line-height: 50px;
+	margin-bottom: 80px;
+	font-weight: 200;
+}
+
+.box {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#sec1 {
+	background-image: url(../img/photo_01.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	/* background: url(../img/photo_01.png) no-repeat center center; */
+	height: 400px;
+	background-size: cover;
+}
+
+#sec1 h1 {
+	font-size: 50px;
+	color: #fff;
+	padding-top: 200px;
+}
+
+#sec1 h1 br {
+	display: none;
+}
+
+#sec2 .flex_area {
+	display: flex;
+}
+
+#sec2 .flex_area div {
+	padding-right: 30px;
+	/* padding:20px;全体にかけても可 */
+	flex: 0 1 33.3%;
+	/* width:33.3%;でも可 */
+}
+
+#sec2 .flex_area #left {
+	padding-left: 30px;
+}
+
+#sec2 .flex_area div h2 {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+#sec2 .flex_area div p {
+	font-size: 14px;
+	line-height: 1.8;
+	margin-bottom: 14px;
+	text-align: left;
+}
+
+#sec3 {
+	background-image: url(../img/photo_02.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	/* background: url(../img/photo_02.png) no-repeat center center; */
+	background-size: cover;
+	color: #fff;
+	background-attachment: fixed;
+}
+
+#sec3 p {
+	font-size: 16px;
+	line-height: 2;
+	margin: 16px;
+}
+
+#sec4 p {
+	font-size: 15px;
+	line-height: 2;
+	margin-bottom: 15px;
+}
+
+#sec4 .port .portfolio {
+	width: 90%;
+	margin: 40px auto;
+	text-align: left;
+	display: flex;
+}
+
+#sec4 .port .portfolio a img {
+	width: 100%;
+}
+
+#sec4 .port .portfolio .port_title {
+	text-align: center;
+}
+
+#sec4 .port .portfolio .port_text {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	/* padding:0 80px;でも可、下のpaddingじゃなくて */
+}
+
+#sec4 .port .portfolio .port_text p {
+	font-size: 14px;
+	padding: 0 10%;
+	/* margin-top:100px;
+	margin-left: 60px;
+	margin-right:60px;
+	でも可 */
+}
+
+#sec4 .port .portfolio p .port_title {
+	text-align: center;
+	font-size: 18px;
+}
+
+#sec4 .port .portfolio .port_img {
+	display: flex;
+	align-items: center;
+}
+
+footer {
+	height: 80px;
+	background-color: #eeeaec;
+}
+
+footer .copyright {
+	color: #acacac;
+	font-size: 12px;
+	padding-top: 30px;
+	letter-spacing: 1px;
+}
